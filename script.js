@@ -12,6 +12,8 @@ if (storedUserInfo) {
     document.getElementById("state").textContent = userInfo.state;
     document.getElementById("city").textContent = userInfo.city;
     document.getElementById("village").textContent = userInfo.village;
+}else{
+    storeUserInfo();
 }
 
 // Function to store user information in local storage
@@ -48,4 +50,4 @@ function storeUserInfo() {
 }
 
 // Call the function to store user information
-storeUserInfo();
+// storeUserInfo();
